@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const config = {
+const appConfig = {
     port: process.env.PORT || 8000,
     nodeEnv: process.env.NODE_ENV || "development",
     mongoURI: process.env.MONGODB_URI || "mongodb://localhost:27017/youtube-clone",
@@ -14,3 +14,4 @@ const config = {
     },
     corsOrigin: process.env.CORS_ORIGIN
 }
+module.exports = appConfig
